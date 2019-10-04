@@ -50,7 +50,19 @@ var employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+function employeeUpdater() {
+  for(i = employees.length; i >=0 ; i--) {
+    for (let key in employees[i]) {
+      if (employees[i][key] === 'Theo') {
+        employees.splice(i, 1);
+      }
+      if (employees[i][key] === 'Lorie') {
+        employees[i].department = 'HR';
+      }
+    }
+  }
+  return employees;
+};
 
 
 
@@ -68,7 +80,7 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
     3. Return the updated array.
 */
 
-//Code Here
+
 
 
 
